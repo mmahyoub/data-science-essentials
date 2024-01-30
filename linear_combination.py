@@ -1,7 +1,6 @@
 import os 
 import numpy as np 
 import matplotlib.pyplot as plt
-import logging
 
 def main():
     # Define vectors and coefficients
@@ -66,14 +65,6 @@ def plot_lc(result_vector, v1, v2, c1, c2):
     plt.savefig(os.path.join(os.getcwd(), figure_name), dpi = 600)
 
     plt.show()
-
-def set_logging():
-    logging.basicConfig(level=logging.INFO)
-    console_handler =  logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    console_handler.setFormatter(formatter)
-    logging.getLogger().addHandler(console_handler)
 
 if __name__ == '__main__':
     main()
