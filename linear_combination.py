@@ -81,7 +81,7 @@ def plot_lc(result_vector, v1, v2, c1, c2):
 
     # Save figure 
     figure_name = 'linear_combination_animation.gif'
-    ani.save(os.path.join(os.getcwd(), figure_name), writer='pillow', fps=0.5)
+    ani.save(os.path.join(os.getcwd(), figure_name), writer='pillow', fps=1)
 
 if __name__ == '__main__':
     main()
