@@ -71,15 +71,12 @@ def plot_lc(result_vector, v1, v2, c1, c2):
     plt.title('Linear Combination Visualization')
     plt.grid()
     
-    # Create a list to store the lines for animation
     lines = []
     legend_labels = ['$v_1$', '$v_2$', str(c1) + '$v_1$', str(c2) + '$v_2$', str(c1) + '$v_1+$' + str(c2) + '$v_2$']
     legend_linecolors = ['red', 'royalblue', 'firebrick', 'blue', 'orange']
     
-    # Use FuncAnimation to animate the drawing of quivers
     ani = FuncAnimation(plt.gcf(), update, fargs=(lines, result_vector, v1, v2, c1, c2, legend_labels, legend_linecolors), frames=5, repeat=False)
 
-    # Save figure 
     figure_name = 'linear_combination_animation.gif'
     ani.save(os.path.join(os.getcwd(), figure_name), writer='pillow', fps=1)
 
