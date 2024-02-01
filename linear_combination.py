@@ -1,9 +1,12 @@
 import os 
 import numpy as np 
 import matplotlib.pyplot as plt
+<<<<<<< HEAD
 from matplotlib.animation import FuncAnimation
 import warnings
 warnings.filterwarnings('ignore')
+=======
+>>>>>>> refs/remotes/origin/main
 
 def main():
     # Define vectors and coefficients
@@ -80,8 +83,15 @@ def plot_lc(result_vector, v1, v2, c1, c2):
     ani = FuncAnimation(plt.gcf(), update, fargs=(lines, result_vector, v1, v2, c1, c2, legend_labels, legend_linecolors), frames=5, repeat=False)
 
     # Save figure 
+<<<<<<< HEAD
     figure_name = 'linear_combination_animation.gif'
     ani.save(os.path.join(os.getcwd(), figure_name), writer='pillow', fps=0.5)
+=======
+    figure_name = 'linear_combination.jpg'
+    plt.savefig(os.path.join(os.getcwd(), figure_name), dpi = 600)
+
+    plt.show()
+>>>>>>> refs/remotes/origin/main
 
 if __name__ == '__main__':
     main()
