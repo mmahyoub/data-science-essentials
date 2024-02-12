@@ -42,7 +42,7 @@ def main():
         frames.append(imageio.imread(f"frame_{i}.png"))
 
     # save in current directory
-    imageio.mimsave("activation_functions.gif", frames, duration = 1500)
+    imageio.mimsave("activation_functions.gif", frames, duration = 1500, loop = 50)
 
 def relu(x):
     return np.maximum(0, x)
