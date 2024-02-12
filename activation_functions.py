@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 def main():
-    '''Create gif animation out of the activation functions and their derivativs plots'''
+    '''Create gif animation out of the activation functions and their derivatives plots'''
     x_vector = np.linspace(-5,5, 500)
     frames = []
     labels = {0: 'sigmoid', 1:'relu', 2:'leaky relu'}
