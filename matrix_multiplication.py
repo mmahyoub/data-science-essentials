@@ -11,7 +11,7 @@
 Here we examine common forms of matrix multiplication (AB = C), A, B, C are matrices; A is  m * n, B is n * p and C is m * p:
 1. Row times column: Entity c_ij is the dot product of row i of matrix A and column j of matrix B.
 2. Columns: Columns of C are linear combinations of columns of A.
-3. Rows: Rows of C are linear combinations of columns of B.
+3. Rows: Rows of C are linear combinations of rows of B.
 4. Column times a row: C is the sum of the "column of A times row of B" matrices (for all corresponding columns and rows). 
 '''
 import numpy as np 
